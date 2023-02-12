@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.formulario{
+  display: grid;
+  place-items: center;
+}
+.formulario input{
+  border-radius: 8px;
+}
+.formulario input,label{
+  font-size: 25px;
+}

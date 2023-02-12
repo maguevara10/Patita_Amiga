@@ -1,0 +1,133 @@
+.general {
+    display: flex;
+}
+#bordeGeneral {
+    text-align: center;
+    background: rgba(76, 175, 80, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.grideando{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.contenedorSomos {
+    background-color: hsl(153, 40%, 30%);
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.contenedorSomosTitulo {
+    background-color: hsl(153, 40%, 30%);
+    border-radius: 15px;
+    width: 80%;
+    display: grid;
+    place-items: center;
+}
+.contenedorSomosTitulo img{
+    width: 100%;
+}
+.contenedorSomosAdicional {
+    background-color: hsl(153, 40%, 30%);
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.elTexto{
+
+    color: white;
+    border: none;
+    height: 180px;
+    width: 85%;
+    overflow: scroll;
+    overflow: overlay;
+    text-align: justify;
+}
+.elTextoAdicional {
+    margin-top: 5%;
+    color: white;
+    border: none;
+    height: 100px;
+    width: 85%;
+    overflow: scroll;
+    overflow: overlay;
+    text-align: justify;
+    text-align: center;
+}
+
+.elTexto::-webkit-scrollbar {
+    background: transparent;
+}
+
+.elTexto::-webkit-scrollbar-corner {
+    border-radius: 10px;
+    background: lightcoral;
+}
+
+#mainInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.popeye {
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+
+    [class*="popeye"] {
+        width: 130px;
+        height: 130px;
+    }
+
+    [class*="contenedorSomosAdicional"] {
+        background-color: hsl(153, 40%, 30%);
+        border-radius: 1px;
+        width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 8px;
+        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    Footer {
+        width: 100%;
+    }
+
+    Header {
+        width: 100%;
+    }
+}

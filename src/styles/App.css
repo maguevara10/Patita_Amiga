@@ -1,0 +1,500 @@
+/* Contenido principal */
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-image: url("Fondo3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+header {
+  padding: 5px;
+  background-color: hsl(153, 40%, 30%);
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: hsl(153, 40%, 30%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+/* Disposición de la tabla dentro del Header */
+.encabezado {
+  display: grid;
+  grid-template-columns: 45% 40% 15%;
+  place-items: center;
+  column-gap: 0px;
+}
+
+#gridLogo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  place-items: center;
+}
+
+#contenedorImg>a>figure>img {
+  width: 300px;
+}
+
+#contenedorImg1>a>figure>img {
+  width: 200px;
+}
+
+/* Id que abarca el botón iniciar sesión */
+
+/* Clase para el carrusel de Imagenes */
+.carruselImagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piePagina {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  place-items: center;
+  column-gap: 0px;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+footer p {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+.piePagina img {
+  width: 50px;
+}
+
+.ulre {
+  color: white;
+  text-decoration: none;
+}
+
+.wapp {
+  list-style-image: url("tryIcon.png");
+}
+
+.face {
+  list-style-image: url("tryIcon2.png");
+}
+
+.inst {
+  list-style-image: url("tryIcon3.png");
+}
+
+.mainBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lista {
+  justify-content: right;
+  padding-left: 35%;
+}
+
+#mainInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 10px;
+}
+
+.borderbox {
+  border: 1px solid gray;
+}
+
+.relativo {
+  position: relative;
+}
+
+.bigbox {
+  width: 24%;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+.smallbox{
+  width: 80%;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.bigbox img {
+  width: 15vw;
+  height: 50vh;
+}
+.smallbox img {
+  width: 5vw;
+  height: 40vh;
+}
+.bigbox .overlay,.smallbox .overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(253, 172, 83, 0.7);
+  border: 15px solid #ffffff;
+  transition: .5s;
+  position: absolute !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 1rem !important;
+}
+.overlay p{
+  font-size: 100%;
+}
+.bigbox:hover .overlay,.smallbox:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+/* Estilos iniciar sesión */
+#tablaFormulario td {
+  padding: 5px 10px;
+}
+
+#tablaFormulario fieldset {
+  border-radius: 8px;
+  border: "5";
+}
+
+#tablaFormulario{
+  border-radius: 8px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  border: 3px solid;
+  background: #fafbfd;
+  color:rgb(18, 108, 8)
+  /* 65, 186, 223 */
+}
+
+.inputFormulario {
+  border-radius: 10px;
+  border: 3px solid rgb(144, 148, 144);
+  height: 22px;
+  width: 94%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.contenedor4{
+  width: 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.692);
+  background: rgba(255, 255, 255, 0.872);
+  border: 0px solid;
+  border-radius: 10px;
+  color: rgb(29, 97, 17);
+  font-size:medium;
+  }
+
+.contenedor .usuario label{
+    font-size: 16px;
+    color: blue;
+    font-weight: bold;
+    background-color: darkred;
+  }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#botonInput {
+  margin: 10px auto 0;
+  position: relative;
+  width: 150px;
+  background-color: hsl(153, 40%, 35%);
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  font-size: 0;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+#botonInput:hover {
+  background-color: hsl(153, 40%, 70%);
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+
+#slider {
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+.slide img {
+  width: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 15px 10px;
+  border-radius: 5px;
+
+}
+
+.controls:hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.controls:active {
+  color: grey;
+}
+
+#left-arrow {
+  left: 10px;
+}
+
+#right-arrow {
+  right: 10px;
+}
+
+#dots-con {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  background: grey;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+
+.active {
+  background: rgb(7, 67, 213);
+}
+
+@media (max-width:576px) {
+  #slider {
+    width: 100%;
+  }
+  .controls {
+    font-size: 1em;
+  }
+  #dots-con {
+    display: none;
+  }
+}
+.gridCentrado{
+  width: 94%;
+  display: grid;
+  place-items: center;
+  column-gap: 40px;
+  row-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.grid4Columnas{ 
+  grid-template-columns: repeat(4,25%);
+}
+.grid3Columnas{
+  grid-template-columns: repeat(3,5%);
+}
+.boton{
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: hsl(153, 40%, 35%);
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 100%;
+  font-weight: 700;
+}
+.boton:hover{
+  background-color: hsl(153, 40%, 70%);
+}
+@media only screen and (max-width: 850px) {
+
+  /* For mobile phones: */
+  .bigbox {
+    width: 90%;
+  }
+  .smallbox {
+    width: 90%;
+  }
+  .grid4Columnas, .grid3Columnas{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .carruselImagenes {
+    width: 90%;
+  }
+
+  Footer {
+    width: 100%;
+  }
+
+  .piePagina li {
+    padding-bottom: 10px;
+  }
+
+  .piePagina .ulre {
+    font-size: 0%;
+  }
+
+  .piePagina {
+    display: grid;
+    grid-template-columns: 20% 30% 25% 10%;
+    place-items: center;
+  }
+
+  Header {
+    width: 100%;
+  }
+
+  Header img {
+    width: 50%;
+  }
+  .Pequenio{
+    width: 20%;
+  }
+  Footer .textoFooter {
+    display: none;
+  }
+
+  .encabezado {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    place-items: center;
+  }
+
+  Header #vertical {
+    display: grid;
+    position: sticky;
+    top: 15px;
+    padding-top: 0px;
+  }
+
+  .encabezado .espacio {
+    display: grid;
+  }
+
+  .encabezado .menuNav {
+    display: none;
+  }
+
+  #gridLogo {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  #contenedorImg {
+    display: none;
+  }
+
+  #tablaFormulario {
+    width: 100%;
+  }
+}
